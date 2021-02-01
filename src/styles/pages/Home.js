@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.div`
 `
 export const Section = styled.div`
-padding: 14px 0;
+  padding: 14px 0;
+
   h2 {
     color: #264F12;
     font-size: 22px;
@@ -19,6 +20,7 @@ padding: 14px 0;
 
   h3 {
     color: #18320B;
+    font-size: 18px;
     margin-top: 18px;
   }
 
@@ -27,22 +29,18 @@ padding: 14px 0;
   }
 
   p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  span {
-    margin-top: 4px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   button {
     background-color: #264F12;
     color: #e1e1e6;
-    width: 130px;
-    height: 30px;
+    width: 160px;
+    height: 40px;
     border-radius: 36px;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     align-self: center;
     margin-top: 20px;
@@ -52,6 +50,7 @@ padding: 14px 0;
   span {
     font-size: 8px;
     font-weight: 100;
+    margin-top: 8px;
   }
 `
 
@@ -74,6 +73,7 @@ export const Contato = styled.div`
     margin: 8px 0;
     p {
       font-size: 16px;
+      text-align: center;
     }
   }
 

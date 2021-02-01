@@ -1,8 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import { FaWhatsapp } from 'react-icons/fa'
 
 import { Container, Section, Wrapper, Contato } from '../styles/pages/Home'
+import Header from '../components/Header'
 
 export default function Home () {
   return (
@@ -10,6 +12,7 @@ export default function Home () {
       <Head>
         <title>Zup Pastagens</title>
       </Head>
+      <Header />
       <main>
         <Section id="kurumi">
           <Wrapper>
@@ -43,7 +46,11 @@ export default function Home () {
             </section>
             <span>https://www.embrapa.br/busca-de-publicacoes/-/publicacao/1015855/informacoes-sobre-a-cultivar-de-capim-elefante-brs-kurumi</span>
 
-            <button>Saiba mais</button>
+            <Link href="/kurumi">
+              <button>
+                Saiba mais
+              </button>
+            </Link>
           </Wrapper>
 
         </Section>
@@ -75,7 +82,9 @@ export default function Home () {
 
             <span>https://www.embrapa.br/busca-de-publicacoes/-/publicacao/1056288/brs-capiacu-cultivar-de-capim-elefante-de-alto-rendimento-para-producao-de-silagem</span>
 
-            <button>Saiba mais</button>
+            <Link href="/capiacu">
+              <button>Saiba mais</button>
+            </Link>
           </Wrapper>
         </Section>
 
@@ -93,12 +102,13 @@ export default function Home () {
         <Section style={{ backgroundColor: '#eeeeee' }}>
           <Wrapper>
             <h2>Contate-nos</h2>
-            <img src="/chacara.png" alt=""/>
+              <iframe style={{ height: '420px' }}
+                src="https://maps.google.com/maps?width=100%25&amp;height=420&amp;hl=en&amp;q=Rua%20Carlos%20Gomes,%20Adamantina,%20SP+(Ch%C3%A1cara%20Nossa%20Senhora%20de%20Lourdes)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             <Contato>
               <div>
                 <p>Chácara Nossa Senhora de Lourdes</p>
                 <p>Bairro: Córrego do Rancho</p>
-                <p>Adamantina</p>
+                <p>Adamantina - SP</p>
               </div>
               <a href="https://wa.me/5518996080966?text=Olá! Quero saber mais sobre o capim" target="_black">
                 <FaWhatsapp />
