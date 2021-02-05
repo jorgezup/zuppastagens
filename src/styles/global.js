@@ -1,12 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-  }
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -25,11 +19,41 @@ export default createGlobalStyle`
     font-family: inherit;
     vertical-align: baseline;
   }
-
+  /* remember to define focus styles! */
+  :focus {
+    outline: 0;
+  }
   body {
+    line-height: 1;
     background-color: #e5e5e5;
     color: #111111;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+  }
+
+  button {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+  /* tables still need 'cellspacing="0"' in the markup */
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  caption, th, td {
+    text-align: left;
+    font-weight: normal;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: "";
+  }
+  blockquote, q {
+    quotes: "" "";
   }
 `

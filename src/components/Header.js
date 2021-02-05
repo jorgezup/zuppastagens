@@ -1,9 +1,9 @@
 import React from 'react'
-import { FiMenu, FiChevronsDown } from 'react-icons/fi'
+import { FiChevronsDown } from 'react-icons/fi'
 import Link from 'next/link'
 
 import { Container, Navigation, Logo } from '../styles/components/Header'
-
+import Navbar from '../components/Nav/Navbar'
 import Grass from '../assets/grass-1.svg'
 
 const Header = () => {
@@ -15,27 +15,27 @@ const Header = () => {
 
   return (
     <Container>
-      <Navigation>
+      {/* <Navigation>
         <Link href="/">
           <p>Zup Pastagens</p>
         </Link>
-        <FiMenu />
-      </Navigation>
+      </Navigation> */}
+      <Navbar />
       <Logo>
         <Grass />
         <h1>Zup Pastagens</h1>
         <h2>Pasto de Alto Rendimento</h2>
       </Logo>
-      <FiChevronsDown
-      style={{
-        width: '36px',
-        height: '36px',
-        position: 'absolute',
-        bottom: 20,
-        color: '#e1e1e6'
-      }}
-      onClick={scrollToSection}
-      />
+      <div className="iconDown" onClick={scrollToSection}>
+        <FiChevronsDown
+          style={{
+            width: '85%',
+            height: '85%',
+            color: '#ccc',
+            animation: 'down .8s alternate linear infinite'
+          }}
+        />
+      </div>
     </Container>
   )
 }

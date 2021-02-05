@@ -1,19 +1,20 @@
 import React from 'react'
-import { FiMenu } from 'react-icons/fi'
-import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
 
-import { Container, Navigation, Wrapper, Video, WhatsApp } from '../styles/pages/Capiacu'
+import Navbar from '../components/Nav/Navbar'
+import { Container, Wrapper, Video, WhatsApp } from '../styles/pages/Capim'
 
 const CapiacuPage = () => {
   return (
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+      animate={{ opacity: 1 }}
+    >
     <Container>
-      <Navigation>
-        <Link href="/">
-          <p>Zup Pastagens</p>
-        </Link>
-        <FiMenu />
-      </Navigation>
+      <Navbar />
       <Wrapper>
         <section>
           <h2>O que é o Capim BRS - Capiaçu</h2>
@@ -50,6 +51,7 @@ const CapiacuPage = () => {
         </section>
       </Wrapper>
     </Container>
+    </motion.div>
   )
 }
 

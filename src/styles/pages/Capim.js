@@ -4,52 +4,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  background:
-    url('/Background.svg')
-    50% 30% no-repeat fixed;
+  background: #eeeeee;
 
 `
 
-export const Navigation = styled.div`
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-
-  height: 60px;
-  width: 100vw;
-
-  background-color: #232529;
-
-  display: flex;
-  align-items: center;
-
-  p {
-    font-family: 'Piedra', cursive;
-    font-size: 16px;
-    color: #23B450;
-    text-transform: uppercase;
-
-    margin-left: 20px;
-  }
-
-  svg {
-    width: 22px;
-    height: 22px;
-    margin-left: auto;
-    margin-right: 20px;
-    color: #e1e1e6;
-  }
-`
 export const Wrapper = styled.div`
   width: 96vw;
   max-width: 1100px;
   margin: 0 auto;
-  margin-top: 60px;
-  /* height: 100vh; */
 
   section {
     padding: 12px 0;
@@ -70,6 +32,16 @@ export const Wrapper = styled.div`
       color: #C40233;
     }
   }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 32px;
+    }
+
+    span {
+      font-size: 24px;
+    }
+  }
 `
 export const Video = styled.div`
   width: 100%;
@@ -83,6 +55,17 @@ export const Video = styled.div`
   img {
     width: 90px;
     height: 70px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 768px;
+    height: 420px;
+    margin: 24px auto;
+
+    img {
+      width: 120px;
+      height: 90px;
+    }
   }
 `
 export const WhatsApp = styled.div`
@@ -113,5 +96,21 @@ export const WhatsApp = styled.div`
       height: 22px;
       margin-right: 8px;
     }
+  }
+
+  @media (min-width: 1024px) {
+    height: 60px;
+    width: 260px;
+
+    a {
+      span {
+        font-size: 22px;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
   }
 `

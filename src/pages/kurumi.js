@@ -1,19 +1,20 @@
 import React from 'react'
-import { FiMenu } from 'react-icons/fi'
-import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
+import Navbar from '../components/Nav/Navbar'
 
-import { Container, Navigation, Wrapper, Video, WhatsApp } from '../styles/pages/Kurumi'
+import { Container, Wrapper, Video, WhatsApp } from '../styles/pages/Capim'
 
 const KurumiPage = () => {
   return (
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+      animate={{ opacity: 1 }}
+    >
     <Container>
-      <Navigation>
-        <Link href="/">
-          <p>Zup Pastagens</p>
-        </Link>
-        <FiMenu />
-      </Navigation>
+      <Navbar />
       <Wrapper>
         <section>
           <h2>O que é o Capim BRS - Kurumi</h2>
@@ -50,6 +51,7 @@ const KurumiPage = () => {
         </section>
       </Wrapper>
     </Container>
+    </motion.div>
   )
 }
 
