@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
+  scroll-behavior: smooth;
+
 
   li {
     padding: 18px 18px;
@@ -10,32 +12,34 @@ export const Ul = styled.ul`
     a {
         text-decoration: none;
         color: #23B450;
-        font-size: 20px;
+        font-size: 1em;
         font-family: 'Cabin Sketch', cursive;
 
         /* font-weight: 400; */
 
         &:hover {
-          color: #4e7942;
+          color: var(--strong-green-color);
         }
 
         &.active {
-          color: rgba(0, 11, 41, 0.3);
+          color: var(--secondary-green-color);
+          font-weight: 600;
         }
       }
   }
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, .85);
 
+    z-index: 20;
 
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
     width: 100%;
-    padding-top: 3rem;
+    padding-top: 3em;
 
     transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
     transition: transform .4s ease-in-out;
@@ -45,10 +49,11 @@ export const Ul = styled.ul`
 
     li {
       padding: 32px 0;
+
       a {
         text-decoration: none;
         color: #fff;
-        font-size: 28px;
+        font-size: 2.2em;
         font-weight: 300;
 
         &:hover {

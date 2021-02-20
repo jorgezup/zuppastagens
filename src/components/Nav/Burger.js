@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import RightNav from './RightNav'
 
 import { Menu } from '../../styles/components/Nav/Burger'
 
 const Burger = () => {
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    open ? document.body.setAttribute('style', 'overflow: hidden') : document.body.setAttribute('style', 'overflow: auto')
+  }, [open])
 
   return (
     <>
@@ -13,7 +17,7 @@ const Burger = () => {
         <div />
         <div />
       </Menu>
-      <RightNav open={open} onClick={() => setOpen(!open)}/>
+      <RightNav open={open} onClick={() => setOpen(!open)} />
     </>
   )
 }

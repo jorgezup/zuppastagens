@@ -1,30 +1,23 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 93vh;
+  height: calc(100vh - 60px);
 
   background-color: #000B29;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: column; */
+
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
   align-items: center;
 
   .iconDown {
     display: flex;
     justify-content: center;
-    width: 46px;
-    height: 46px;
+    height: 3rem;
     cursor: pointer;
-  }
-
-  @media (min-width: 1024px) {
-    height: 100vh;
-
-    .iconDown {
-      width: 80px;
-      height: 80px;
-    }
   }
 
   @keyframes down {
@@ -36,6 +29,15 @@ export const Container = styled.div`
     }
   }
 `
+export const Wrapper = styled.div`
+  /* padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%; */
+`
 
 export const Logo = styled.div`
   display: flex;
@@ -44,48 +46,24 @@ export const Logo = styled.div`
 
   h1 {
     font-family: 'Piedra', cursive;
-    font-size: 50px;
+    font-size: 3em;
     color: #23B450;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin: .44em;
 
   }
 
   h2 {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 22px;
+    font-size: 1.2em;
     font-weight: bold;
     color: #E6E6E6;
     text-transform: uppercase;
   }
 
   svg {
-    width: 144px;
-    height: 178px;
-    margin-bottom: 8px;
-
-  }
-
-  @media (min-width: 320px) {
-    h1 {
-      font-size: 42px;
-    }
-    h2 {
-      font-size: 18px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: 68px;
-    }
-    h2 {
-      font-size: 26px;
-    }
-    svg {
-      width: 320px;
-      height: 240px;
-    }
+    width: 10em;
+    height: 12em;
   }
 
 `

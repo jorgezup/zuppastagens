@@ -7,12 +7,15 @@ import { Nav } from '../../styles/components/Nav/Navbar'
 const Navbar = () => {
   return (
     <Nav>
-      <Link href="/">
-        <div className="logo">
-          Zup Pastagens
-        </div>
-      </Link>
-      <Burger />
+      <div className="wrapper">
+        <Link href="/">
+          <div className="logo">
+            Zup Pastagens
+            </div>
+        </Link>
+        <Burger />
+
+      </div>
     </Nav>
   )
 }

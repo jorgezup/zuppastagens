@@ -1,13 +1,12 @@
+/* eslint-disable space-before-function-paren */
 import React from 'react'
 import { FiChevronsDown } from 'react-icons/fi'
-import Link from 'next/link'
 
-import { Container, Navigation, Logo } from '../styles/components/Header'
-import Navbar from '../components/Nav/Navbar'
+import { Container, Logo } from '../styles/components/Header'
 import Grass from '../assets/grass-1.svg'
 
 const Header = () => {
-  function scrollToSection () {
+  function scrollToSection() {
     document.querySelector('#kurumi').scrollIntoView({
       behavior: 'smooth'
     })
@@ -15,12 +14,6 @@ const Header = () => {
 
   return (
     <Container>
-      {/* <Navigation>
-        <Link href="/">
-          <p>Zup Pastagens</p>
-        </Link>
-      </Navigation> */}
-      <Navbar />
       <Logo>
         <Grass />
         <h1>Zup Pastagens</h1>
@@ -36,6 +29,7 @@ const Header = () => {
           }}
         />
       </div>
+
     </Container>
   )
 }

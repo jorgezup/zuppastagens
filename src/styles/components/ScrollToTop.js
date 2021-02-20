@@ -4,8 +4,8 @@ export const Container = styled.div`
   position: fixed;
   bottom: 12px;
   right: 24px;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 100%;
   background-color: #23B450;
   display: flex;
@@ -31,7 +31,9 @@ export const Container = styled.div`
   }
 
   @media (max-width: 425px) {
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    height: 32px;
+
+    right: 8px;
   }
 `

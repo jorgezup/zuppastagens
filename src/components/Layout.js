@@ -2,13 +2,13 @@
 import React from 'react'
 import { Container } from '../styles/components/Layout'
 
-import Header from '../components/Header'
+import Navbar from '../components/Nav/Navbar'
 import Footer from '../components/Footer'
 
 const Layout = ({ children }) => {
   return (
     <Container>
-      <Header />
+      <Navbar />
       {children}
       <Footer />
     </Container>

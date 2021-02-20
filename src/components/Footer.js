@@ -13,20 +13,28 @@ const Footer = () => {
       <div className="wrapper">
         <SocialIcons>
           <div>
-            <FaFacebookSquare />
-            <span>/zuppastagens</span>
+            <a href="https://www.facebook.com/zuppastagens" target="_black" rel="noopener noreferrer">
+              <FaFacebookSquare />
+              <span>/zuppastagens</span>
+            </a>
           </div>
           <div>
-            <FiInstagram />
-            <span>@zuppastagens</span>
+            <a href="https://www.instagram.com/zuppastagens" target="_black" rel="noopener noreferrer">
+              <FiInstagram />
+              <span>@zuppastagens</span>
+            </a>
           </div>
           <div>
-            <FiMail />
-            <span>contato@zuppastagens.com.br</span>
+            <a href="mailto:zuppastagens@gmail.com" >
+              <FiMail />
+              <span>zuppastagens@gmail.com</span>
+            </a>
           </div>
           <div>
-            <FaWhatsapp />
-            <span>(18) 99608-0966</span>
+            <a href="https://wa.me/5518997996385?text=Olá! Quero saber mais sobre o capim" target="_black" rel="noopener noreferrer">
+              <FaWhatsapp />
+              <span>(18) 99799-6385</span>
+            </a>
           </div>
         </SocialIcons>
         <Logo>

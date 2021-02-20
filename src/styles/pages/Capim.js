@@ -1,25 +1,24 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  background: #eeeeee;
-
 `
 
 export const Wrapper = styled.div`
-  width: 96vw;
-  max-width: 1100px;
-  margin: 0 auto;
+  /* width: 96vw;
+  max-width: 1100px; */
+  width: min(96vw, 1300px);
+
+
+  margin: auto;
+
 
   section {
-    padding: 12px 0;
+    padding: 1.6em 0;
   }
   h2 {
-    color: #264F12;
-    font-size: 22px;
-    border-bottom: 2px solid #264F12;
+    color: var(--primary-green-color);
+    font-size: 2em;
+    line-height: 1em;
   }
 
   div {
@@ -29,52 +28,25 @@ export const Wrapper = styled.div`
     justify-content: center;
 
     span {
-      color: #C40233;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    h2 {
-      font-size: 32px;
-    }
-
-    span {
-      font-size: 24px;
+      color: var(--span-red-color);
     }
   }
 `
 export const Video = styled.div`
   width: 100%;
   height: 220px;
-
-  background: #dddddd;
-
-  margin-top: 20px;
-  margin-bottom: 8px;
-
-  img {
-    width: 90px;
-    height: 70px;
-  }
+  margin: 1em auto;
 
   @media (min-width: 1024px) {
-    width: 768px;
-    height: 420px;
-    margin: 24px auto;
-
-    img {
-      width: 120px;
-      height: 90px;
-    }
+    width: 760px;
+    height: 440px;
   }
 `
 export const WhatsApp = styled.div`
-  width: 200px;
-  height: 42px;
-  background-color: #008000;
+  background-color: var(--whatsapp-green-color);
   border-radius: 36px;
 
-  margin-top: 12px;
+  margin-top: 1.2em;
 
   a {
     text-decoration: none;
@@ -83,9 +55,11 @@ export const WhatsApp = styled.div`
     align-items: center;
     justify-content: center;
 
+    padding: .8em 1.2em;
+
     span {
       color: #fff;
-      font-size: 18px;
+      font-size: 1em;
       font-weight: 400;
       margin-top: initial;
     }
@@ -98,19 +72,4 @@ export const WhatsApp = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
-    height: 60px;
-    width: 260px;
-
-    a {
-      span {
-        font-size: 22px;
-      }
-      svg {
-        width: 30px;
-        height: 30px;
-      }
-    }
-
-  }
 `

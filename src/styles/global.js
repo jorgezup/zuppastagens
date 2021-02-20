@@ -23,17 +23,42 @@ export default createGlobalStyle`
   :focus {
     outline: 0;
   }
+
+  :root {
+    --primary-background-color: #e5e5e5;
+    --secondary-background-color: #f1f2f3;
+    --primary-text-color: #111;
+    --primary-green-color: #264F12;
+    --secondary-green-color: #567d46;
+    --strong-green-color: #4e7942;
+    --paragraph-green-color: #577447;
+    --whatsapp-green-color: #008000;
+    --span-red-color: #C40233;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    line-height: 1;
-    background-color: #e5e5e5;
-    color: #111111;
+    line-height: 1rem;
+    background-color: var(--primary-background-color);
+    color: #111;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 0.875rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
+    }
+
+    @media screen and (min-width: 80rem) {
+      font-size: 1.375rem;
+    }
   }
 
   button {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-family: inherit;
+    font-size: inherit;
     cursor: pointer;
   }
 

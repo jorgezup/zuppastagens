@@ -10,6 +10,13 @@ const RightNav = ({ open, onClick }) => {
 
   return (
     <Ul open={open} >
+      {router.route !== '/' &&
+        <li onClick={() => onClick()}>
+          <Link href="/">
+            <a className={router.pathname === '/' ? 'active' : ''}>Home</a>
+          </Link>
+        </li>
+      }
       <li onClick={() => onClick()}>
         <Link href="/kurumi">
           <a className={router.pathname === '/kurumi' ? 'active' : ''}>Capim BRS - Kurumi</a>
@@ -20,17 +27,21 @@ const RightNav = ({ open, onClick }) => {
           <a className={router.pathname === '/capiacu' ? 'active' : ''}>Capim BRS - Capiaçu</a>
         </Link>
       </li>
-      <li onClick={() => onClick()}>
-        <Link href="/#quem-somos" >
-          <a className={router.pathname === '/#quem-somos' ? 'active' : ''}>Quem somos</a>
-        </Link>
-      </li>
-      <li onClick={() => onClick()}>
-        <Link href="/#contato">
-          <a className={router.pathname === '/#contato' ? 'active' : ''}>Contato</a>
-        </Link>
-      </li>
-    </Ul>
+      {router.route === '/' &&
+        <li onClick={() => onClick()}>
+          <Link href="/#quem-somos" >
+            <a className={router.pathname === '/#quem-somos' ? 'active' : ''}>Quem somos</a>
+          </Link>
+        </li>
+      }
+      {router.route === '/' &&
+        <li onClick={() => onClick()}>
+          <Link href="/#contato">
+            <a className={router.pathname === '/#contato' ? 'active' : ''}>Contato</a>
+          </Link>
+        </li>
+      }
+    </Ul >
   )
 }
 
