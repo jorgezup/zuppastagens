@@ -1,3 +1,6 @@
 module.exports = {
-  trailingSlash: false
+  images: {
+    loader: 'cloudinary',
+    path: 'https://res.cloudinary.com/ddj1kyras'
+  }
 }

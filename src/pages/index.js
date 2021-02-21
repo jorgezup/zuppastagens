@@ -32,10 +32,10 @@ export default function Home() {
 
               <WrapperImages>
                 <div className="images">
-                  <Image id="img1" className="imgbox" src="/kurumi/kurumi.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
-                  <Image id="img2" className="imgbox" src="/kurumi/kurumi-2.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
-                  <Image id="img3" className="imgbox" src="/kurumi/kurumi-3.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
-                  <Image id="img4" className="imgbox" src="/kurumi/kurumi-4.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img1" className="imgbox" src="/zup%20pastagens/kurumi_mtnp4j" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img2" className="imgbox" src="/zup%20pastagens/kurumi-2_iixhpv" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img3" className="imgbox" src="/zup%20pastagens/kurumi-3_a3juu4" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img4" className="imgbox" src="/zup%20pastagens/kurumi-4_mex18z" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
                 </div>
               </WrapperImages>
 
@@ -81,10 +81,10 @@ export default function Home() {
 
               <WrapperImages>
                 <div className="images">
-                  <Image id="img1" className="imgbox" src="/capiacu/capiacu.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
-                  <Image id="img2" className="imgbox" src="/capiacu/capiacu-2.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
-                  <Image id="img3" className="imgbox" src="/capiacu/capiacu-3.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
-                  <Image id="img4" className="imgbox" src="/capiacu/capiacu-4.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img1" className="imgbox" src="/zup%20pastagens/capiacu_evsefn" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img2" className="imgbox" src="/zup%20pastagens/capiacu-2_rdtzdl" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img3" className="imgbox" src="/zup%20pastagens/capiacu-3_ujyc3p" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img4" className="imgbox" src="/zup%20pastagens/capiacu-4_an0ljs" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
                 </div>
               </WrapperImages>
 
