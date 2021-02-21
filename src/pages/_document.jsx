@@ -43,7 +43,28 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+          <meta name="title" content="Zup Pastagens" />
+          <meta name="description" content="Mudas de Capim de alta qualidade.
+          Venda de Mudas de Capim: BRS-Kurumi e BRS-Capiaçu."/>
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://zuppastagens.com.br/" />
+          <meta property="og:title" content="Zup Pastagens" />
+          <meta property="og:description" content="Mudas de Capim de alta qualidade.
+          Venda de Mudas de Capim: BRS-Kurumi e BRS-Capiaçu."/>
+          <meta property="og:image" content="/zup_logo.png" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://zuppastagens.com.br/" />
+          <meta property="twitter:title" content="Zup Pastagens" />
+          <meta property="twitter:description" content="Mudas de Capim de alta qualidade.
+          Venda de Mudas de Capim: BRS-Kurumi e BRS-Capiaçu."/>
+          <meta property="twitter:image" content="/zup_logo.png" />
+
+          <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+          <link rel="manifest" href="/favicon_io/site.webmanifest" />
         </Head>
         <body>
           <Main />
