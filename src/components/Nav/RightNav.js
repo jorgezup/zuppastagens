@@ -5,37 +5,38 @@ import { useRouter } from 'next/router'
 
 import { Ul } from '../../styles/components/Nav/RightNav'
 
-const RightNav = ({ open, onClick }) => {
+const RightNav = ({ open, setOpen }) => {
   const router = useRouter()
 
   return (
-    <Ul open={open} >
+    <Ul open={open}>
+
       {router.route !== '/' &&
-        <li onClick={() => onClick()}>
+        <li onClick={() => setOpen(false)}>
           <Link href="/">
             <a className={router.pathname === '/' ? 'active' : ''}>Home</a>
           </Link>
         </li>
       }
-      <li onClick={() => onClick()}>
+      <li onClick={() => setOpen(false)}>
         <Link href="/kurumi">
           <a className={router.pathname === '/kurumi' ? 'active' : ''}>Capim BRS - Kurumi</a>
         </Link>
       </li>
-      <li onClick={() => onClick()}>
+      <li onClick={() => setOpen(false)}>
         <Link href="/capiacu">
           <a className={router.pathname === '/capiacu' ? 'active' : ''}>Capim BRS - Capiaçu</a>
         </Link>
       </li>
       {router.route === '/' &&
-        <li onClick={() => onClick()}>
+        <li onClick={() => setOpen(false)}>
           <Link href="/#quem-somos" >
             <a className={router.pathname === '/#quem-somos' ? 'active' : ''}>Quem somos</a>
           </Link>
         </li>
       }
       {router.route === '/' &&
-        <li onClick={() => onClick()}>
+        <li onClick={() => setOpen(false)}>
           <Link href="/#contato">
             <a className={router.pathname === '/#contato' ? 'active' : ''}>Contato</a>
           </Link>
