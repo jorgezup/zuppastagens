@@ -3,6 +3,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import { FaWhatsapp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
@@ -11,6 +12,9 @@ import Header from '../components/Header'
 import { Container, Section, Wrapper, WrapperImages, Contato } from '../styles/pages/Home'
 
 export default function Home() {
+  const MapWithNoSSR = dynamic(() => import('../components/Map'), {
+    ssr: false
+  })
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -140,8 +144,16 @@ export default function Home() {
             <Wrapper>
               <h2>Contate-nos</h2>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.955612581666!2d-51.0876229848538!3d-21.704448285636328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9496a1f653f6e74b%3A0x421b2e673968277!2sZup%20Pastagens!5e0!3m2!1spt-BR!2sbr!4v1613764202954!5m2!1spt-BR!2sbr"
-                style={{ height: '450px', width: '100%' }}></iframe>
+              {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.955612581666!2d-51.0876229848538!3d-21.704448285636328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9496a1f653f6e74b%3A0x421b2e673968277!2sZup%20Pastagens!5e0!3m2!1spt-BR!2sbr!4v1613764202954!5m2!1spt-BR!2sbr"
+                style={{ height: '450px', width: '100%' }}></iframe> */}
+
+              <div id="map" style={{ height: '450px', width: '100%' }}>
+                <MapWithNoSSR />
+                <footer>
+                  <a target="_blank" rel="noopener noreferrer" href={'https://www.google.com/maps/dir/?api=1&destination=-21.7044483,-51.0854343'}>Ver rotas no Google Maps</a>
+                </footer>
+              </div>
+
               <Contato>
                 <div>
                   <p>Chácara Nossa Senhora de Lourdes</p>

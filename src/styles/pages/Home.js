@@ -195,7 +195,7 @@ export const Contato = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  /* margin: 20px 0; */
 
   div {
     margin: 1.4em 0;
