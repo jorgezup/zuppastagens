@@ -8,6 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fontsource/cabin-sketch": "^4.2.1",
+    "@fontsource/lato": "^4.2.1",
+    "@fontsource/piedra": "^4.2.1",
     "babel-plugin-inline-react-svg": "^1.1.2",
     "framer-motion": "^3.3.0",
     "next": "10.0.6",
