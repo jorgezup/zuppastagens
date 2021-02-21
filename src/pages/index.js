@@ -2,6 +2,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaWhatsapp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
@@ -31,14 +32,10 @@ export default function Home() {
 
               <WrapperImages>
                 <div className="images">
-                  <div id="img1" className="imgbox" style={{ backgroundImage: 'url(\'/kurumi/kurumi.jpg\')' }}>
-                  </div>
-                  <div id="img2" className="imgbox" style={{ backgroundImage: 'url(\'/kurumi/kurumi-2.jpg\')' }}>
-                  </div>
-                  <div id="img3" className="imgbox" style={{ backgroundImage: 'url(\'/kurumi/kurumi-3.jpg\')' }}>
-                  </div>
-                  <div id="img4" className="imgbox" style={{ backgroundImage: 'url(\'/kurumi/kurumi-4.jpg\')' }}>
-                  </div>
+                  <Image id="img1" className="imgbox" src="/kurumi/kurumi.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img2" className="imgbox" src="/kurumi/kurumi-2.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img3" className="imgbox" src="/kurumi/kurumi-3.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img4" className="imgbox" src="/kurumi/kurumi-4.jpg" alt="Capim BRS-Kurumi" layout="fill" objectFit="cover" quality={100} />
                 </div>
               </WrapperImages>
 
@@ -84,14 +81,10 @@ export default function Home() {
 
               <WrapperImages>
                 <div className="images">
-                  <div id="img1" className="imgbox" style={{ backgroundImage: 'url(\'/capiacu/capiacu.jpg\')' }}>
-                  </div>
-                  <div id="img2" className="imgbox" style={{ backgroundImage: 'url(\'/capiacu/capiacu-2.jpg\')' }}>
-                  </div>
-                  <div id="img3" className="imgbox" style={{ backgroundImage: 'url(\'/capiacu/capiacu-3.jpg\')' }}>
-                  </div>
-                  <div id="img4" className="imgbox" style={{ backgroundImage: 'url(\'/capiacu/capiacu-4.jpg\')' }}>
-                  </div>
+                  <Image id="img1" className="imgbox" src="/capiacu/capiacu.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img2" className="imgbox" src="/capiacu/capiacu-2.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img3" className="imgbox" src="/capiacu/capiacu-3.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
+                  <Image id="img4" className="imgbox" src="/capiacu/capiacu-4.jpg" alt="Capim BRS-Capiaçu" layout="fill" objectFit="cover" quality={100} />
                 </div>
               </WrapperImages>
 
