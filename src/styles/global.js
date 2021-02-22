@@ -1,12 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
-import '@fontsource/lato'
-import '@fontsource/lato/100.css'
-import '@fontsource/lato/300.css'
-import '@fontsource/lato/700.css'
-import '@fontsource/lato/900.css'
-import '@fontsource/piedra'
-import '@fontsource/cabin-sketch'
-import '@fontsource/cabin-sketch/700.css'
+// import '@fontsource/lato'
+// import '@fontsource/lato/100.css'
+// import '@fontsource/lato/300.css'
+// import '@fontsource/lato/700.css'
+// import '@fontsource/lato/900.css'
+// import '@fontsource/piedra'
+// import '@fontsource/cabin-sketch'
+// import '@fontsource/cabin-sketch/700.css'
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,

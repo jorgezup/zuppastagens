@@ -37,10 +37,14 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
 
-          {/* <link
+          <link rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin />
+
+          <link
             href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Lato:wght@100;300;400;700;900&family=Piedra&display=swap"
             rel="stylesheet"
-          /> */}
+          />
 
           <meta name="title" content="Zup Pastagens" />
           <meta name="description" content="Mudas de Capim de alta qualidade.
